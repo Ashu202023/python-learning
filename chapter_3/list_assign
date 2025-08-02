@@ -1,0 +1,51 @@
+#3.1 
+friends=["madara","Eric","sakamoto","gojo"]
+for i in friends:
+    print(i.title())
+
+#3.2 
+for i in friends:
+    print(f"Hello, {i.title()}.")
+
+#3.3 
+fav_transports=["car","bike","helicopter","train"]
+for i in fav_transports:
+    if i[0] not in "aeiuo":
+        print(f"I would like to own a {i.title()}.")
+    else:
+        print(f"I would like to own an {i.title()}.")
+
+#3.4 
+guest_list=["gojo","sakura","Hinata"]
+for i in guest_list:
+    print(f"Dear {i.title()}, you are invited to the dinner party.please come without any gifts.")
+
+#3.5 
+guest_miss=input("enter the name of a guest who can't make it: ")
+print(f"Dear {guest_miss.title()} you can't make it to the dinner party, we will miss you. Please try to come next time.")
+removed_guest=guest_list.remove(guest_miss)
+guest_list.append("Naruto")
+
+
+for i in guest_list:
+    print(f"Dear {i.title()}, you are invited to the dinner party.please come without any gifts.") 
+
+#3.6 
+guest_list.insert(0,"kakasi")
+guest_list.insert(len(guest_list)//2,"sasuke")
+guest_list.append("madara") 
+
+for i in guest_list:
+    print(f"Dear {i.title()}, you are invited to the dinner party.please come without any gifts.") 
+
+#3.7 
+while len(guest_list)>2:
+    removed_guest=guest_list.pop()
+    print(f"Dear {removed_guest.title()}, you are not invited to the dinner party, please try to come next time.")
+
+for i in guest_list:
+    print(f"Dear {i.title()}, you are still invited to the dinner party, please come without any gifts.")
+while len(guest_list)>0:
+    removed_guest=guest_list.pop()
+
+print(guest_list)
