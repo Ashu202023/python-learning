@@ -68,3 +68,19 @@ print("after sorted",pets)
 
 pets.sort(reverse=True) # sorts the list in reverse order permanently
 print(f"after sorted in reverse order:{pets}.")
+
+#sorted() method sorts the list temporarily,does not modify the original list. 
+vehicle=["car","bike","helicopter","train","bus","truck"]
+print(sorted(vehicle))#sorted in ascending order temporarily
+print(sorted(vehicle,reverse=True))#sorted in descending order temporarily
+print(vehicle)
+
+# printing the list in reverse order:reverse() method 
+# reverse() method reverses the order of the list permanently
+
+vehicle.reverse()
+print(vehicle)
+
+#finding the length of a list : len() function
+print(len(vehicle)) 
+

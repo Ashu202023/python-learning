@@ -49,3 +49,22 @@ while len(guest_list)>0:
     removed_guest=guest_list.pop()
 
 print(guest_list)
+
+#3.8 
+place_to_visit=["london","america","russia","bangkok","paris"]
+print(place_to_visit)
+print(f"Sorted list: {sorted(place_to_visit)}.")
+print(f"Original list: {place_to_visit}.")
+print(f"Sorted list in reverse order: {sorted(place_to_visit,reverse=True)}.")
+print(f"Original list: {place_to_visit}.")
+place_to_visit.reverse()
+print(f"reversed list: {place_to_visit}.")
+place_to_visit.reverse()
+print(f"reversed list again: {place_to_visit}.")
+place_to_visit.sort()
+print(f"sorted list: {place_to_visit}.")
+place_to_visit.sort(reverse=True)
+print(f"sorted list in reverse order: {place_to_visit}.")
+
+#3.9
+print("number of peopele invited to the dinner party:", len(guest_list))
