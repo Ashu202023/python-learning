@@ -1,0 +1,20 @@
+#4.1
+fav_pizzas=["pepperoni","mushroom","cheese"]
+for pizza in fav_pizzas:
+    print(pizza.title())
+
+for pizza in fav_pizzas:
+    print(f"I like {pizza.title()} pizza.")
+print("I started eating pizza when I was a child, and I still love it today!\n there are so many different types of pizza to enjoy!\n But if " \
+"I had to choose one pizza to eat for the rest of my life, it would be pepperoni pizza.\n")
+
+#4.2 
+pet_animals=["dog","cat","hamster","parrot"]
+for pet in pet_animals:
+    print(pet.title())
+
+for pet in pet_animals:
+    print(f"A {pet.title()} would make a great pet.") 
+print("Any of these animals would make a great pet!\nI would love to have a dog as my pet, but I also like cats and hamsters.\nParrots are also very interesting pets, " \
+"but they require a lot of care and attention.\nI think I would like to have a dog as my pet, but I would also like to have a cat or a hamster.\nI think all of these animals would make great pets!\n")
+
