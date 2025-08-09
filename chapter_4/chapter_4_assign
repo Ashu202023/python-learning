@@ -87,3 +87,12 @@ for pizza in My_pizzas:
 
 for pizza in friend_pizzas:
     print(pizza.title()) 
+
+#4.13 
+Buffet=("chicken","fish","rice","salad","soup")
+for food in Buffet:
+    print(food.title()) 
+# Buffet[0]="Mutton paaya"  # This will raise an error because tuples are immutable
+Buffet=("mutton paaya","butter chicken","rice","salad","soup")  # This will create a new tuple
+for food in Buffet:
+    print(food.title())
