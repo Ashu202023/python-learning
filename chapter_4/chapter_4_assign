@@ -18,3 +18,72 @@ for pet in pet_animals:
 print("Any of these animals would make a great pet!\nI would love to have a dog as my pet, but I also like cats and hamsters.\nParrots are also very interesting pets, " \
 "but they require a lot of care and attention.\nI think I would like to have a dog as my pet, but I would also like to have a cat or a hamster.\nI think all of these animals would make great pets!\n")
 
+#4.3 
+for i in range(1,21):
+    print(i, end=" ")
+
+#4.4 
+numbers=[i for i in range(1,1000001)]
+for i in numbers:
+    print(i,end=" ")
+
+#4.5 
+print()
+print(min(numbers))  # minimum value in the list
+print(max(numbers))  # maximum value in the list    
+print(sum(numbers))  # sum of all values in the list
+
+#4.6 
+odd_list=[i for i in range(1,20,2)]
+for i in odd_list:
+    print(i, end=" ")
+
+print() 
+
+#4.7 
+multiples_of_three=[i for i in range(3,31,3)]
+for i in multiples_of_three:
+    print(i, end=" ") 
+
+4.8 
+cube_list=[i**3 for i in range(1,11)]
+for i in cube_list:
+    print(i, end=" ") 
+
+print() 
+
+#4.9
+cube_list=[i**3 for i in range(1,11)]
+print(cube_list)
+
+#4.10 
+pet_animal=['dog','cat','hamster','parrot','fish','rabbit','turtle']
+print("The first three items in the list are:")
+for i in pet_animal[:3]:
+    print(i.title())
+
+print("Three items from the middle of the list are:")
+for i in pet_animal[2:5]:
+    print(i.title())
+
+print("The last three items in the list are:")
+for i in pet_animal[-3:]:
+    print(i.title())
+
+My_pizzas=['pepperoni','mushroom','cheese','sausage','vegetable']
+friend_pizzas=My_pizzas[:]
+My_pizzas.append('pineapple')
+friend_pizzas.append('anchovies')
+print("My favorite pizzas are:")
+for pizza in My_pizzas:
+    print(pizza.title())
+print("My friend's favorite pizzas are:")
+for pizza in friend_pizzas:
+    print(pizza.title()) 
+
+#4.12
+for pizza in My_pizzas:
+    print(pizza.title())
+
+for pizza in friend_pizzas:
+    print(pizza.title()) 

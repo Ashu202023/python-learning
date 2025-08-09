@@ -48,3 +48,35 @@ print(max(digits))  # maximum value in the list
 print(sum(digits))  # sum of all values in the list
 
 #List comprehensions: a concise way to create lists 
+squares=[x**2 for x in range(1,11)]
+print(squares)
+
+#working with part of a list 
+# slicing a list 
+players=['charles','martina','michael','florence','eli']
+print(players[0:4]) # slicing the first four players
+print(players[1:4])
+print(players[:4]) # slicing the first four players
+print(players[2:])# slicing from the third player to the end
+print(players[-3:])
+print(players[-4::3]) # slicing the last four players except the last one
+
+#looping through a slice 
+print("Here are the first three players on my team:")
+for player in players[:3]:
+    print(player.title())
+
+#copying a list 
+my_foods=['pizza','falafel','carrot cake', 'cannoli','ice cream']
+friend_foods=my_foods[:] # creates a copy of the list
+my_foods.append('coconut cake') # adds a new food to my_foods
+friend_foods.append('chocolate cake') # adds a new food to friend_foods
+print("My favourite foods are: ",my_foods)
+print("My friend's favourite foods are: ",friend_foods)
+
+bro_foods=my_foods # this creates a reference to the original list, not a copy
+
+bro_foods.append("gulab jamun") # adds a new food to bro_foods
+print("My favourite foods are: ",my_foods)# this will also show the new food added to my_foods  
+
+print("My brother's favourite foods are: ",bro_foods) 
