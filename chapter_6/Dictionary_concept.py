@@ -112,5 +112,83 @@ for name in sorted(Favorite_languages.keys()): #sorted() function returns a sort
 
 #looping through all values in a dictionary
 
+print(f"the following language have been mentioned.")
+for language in Favorite_languages.values(): #values() method returns a list of all values in the dictionary
+    print(language.title())
 
+for language in set(Favorite_languages.values()): #set() function returns a set of unique values
+    print(language.title())
+
+languages={"python","c","java","python","ruby","c"} #set of languages,duplicates are removed
+print(languages) #do not have a particular order
+
+# Nesting: A dictionary can store a list,and a list can store dictionaries
+# A dictionary can also store a dictionary
+
+# A list of dictionaries:
+alien_0={"color":"green","points":5}
+alien_1={"color":"yellow","points":10}
+alien_2={"color":"red","points":15}
+
+aliens=[alien_0,alien_1,alien_2]
+
+for alien in aliens:
+    print(alien)
+
+#Make an empty list for storing aliens
+aliens=[]
+for alien_number in range(30):
+    new_alien={"color":"red","points":5,"speed":"slow"}
+    aliens.append(new_alien)
+
+for alien in aliens[:5]:
+    print(alien)
+
+print("...")
+print(f"total number of aliens:{len(aliens)}")
+
+for alien in aliens[:3]:
+    if alien["color"]=="red":
+        alien["color"]="yellow"
+        alien["speed"]="medium"
+        alien["points"]=10
+    elif alien["color"]=="yellow":
+        alien["color"]="green"
+        alien["speed"]="Fast"
+        alien["points"]=15
+for alien in aliens[:5]:
+    print(alien)
+print("...")
+
+# A List in Dictionary 
+
+pizza={
+    "crust":"thick",
+    "toppings":["mushrooms","extra cheese"],
+}
+
+print(f"you ordered a {pizza["crust"]}-crusted pizza"
+       " with the following toppings:")
+
+for topping in pizza["toppings"]:
+    print(f"\t{topping}")
+ 
+fav_langauges={
+    "ashutosh":["python","c"],
+    "aswani":["c"],
+    "nikhil":["java","javascript"],
+    "rahul":["ruby","python"],
+}
+
+for name,languages in fav_langauges.items():
+    
+    if len(languages)>1:
+        print(f"\n{name.title()}'s favourite languages are:")
+        for language in languages:
+            print(f"\t{language.title()}")
+    else:
+        print(f"\n{name.title()}'s favourite language is:")
+        print(f"\t{languages[0].title()}")
+
+# A Dictionary in a Dictionary
 

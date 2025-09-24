@@ -34,3 +34,47 @@ glossary={
 for word,meaning in glossary.items():
     print(f"{word.title()} : \n {meaning}\n")
 
+#6.4
+glossary["set"]="A collection of unique items."
+glossary["string"]="A collection of characters."
+glossary["float"]="A number with a decimal point."
+glossary["integer"]="A whole number."
+glossary["boolean"]="A value that is either True or False."
+
+for word,meaning in glossary.items():
+    print(f"{word.title()} \n : {meaning}\n")
+
+#6.5
+rivers={
+    "nile":"Egypt",
+    "ganga":"India",
+    "amazon":"Brazil",
+}
+
+for river,country in rivers.items():
+    print(f"The {river.title()} runs through {country.title()}.")
+
+print(f"\nThe following rivers are included in the dictionary:")
+for river in rivers.keys():
+    print(river.title())
+
+print(f"\nThe following countries are included in the dictionary:")
+for country in rivers.values():
+    print(country.title())
+
+#6.6
+Favorite_languages={
+    "ashutosh":"python",
+    "aswani":"c",
+    "nikhil":"java",
+    "rahul":"javascript",
+    "kanishka":"ruby",
+    }
+people=["ashutosh","aswani","nikhil","rahul","kanishka","ritik","mohit"]   
+for person in people:
+    if person in Favorite_languages:
+        print(f"Thank you {person.title()} for taking the poll.")
+    else:
+        print(f"{person.title()},please take the poll.")
+
+
