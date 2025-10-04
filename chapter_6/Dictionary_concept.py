@@ -192,3 +192,23 @@ for name,languages in fav_langauges.items():
 
 # A Dictionary in a Dictionary
 
+users={
+    "ashutosh_k":{
+        "first":"ashutosh",
+        "last":"kumar",
+        "location":"delhi",
+    },
+
+    "abhinash":{
+        "first":"abhinash",
+        "last":"singh",
+        "location":"noida",
+    }
+}
+
+for username,user_info in users.items():
+    print(f"\n username:{username}")
+    full_name =f"{user_info["first"]} {user_info["last"]}"
+    location=user_info["location"]
+    print(f"\n Full name:{full_name.title()}")
+    print(f"\n location:{location.title()}")
